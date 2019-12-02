@@ -29,7 +29,6 @@ public class Main2 extends javax.swing.JFrame {
         Main2.btnBoking.setEnabled(false);
         Main2.btnLap.setEnabled(false);
         Main2.btnPenyewa.setEnabled(false);
-        Main2.btnPembayaran.setEnabled(false);
         Main2.jmLogOut.setEnabled(false);
 
     }
@@ -48,7 +47,6 @@ public class Main2 extends javax.swing.JFrame {
         btnBeranda = new javax.swing.JButton();
         btnBoking = new javax.swing.JButton();
         btnPenyewa = new javax.swing.JButton();
-        btnPembayaran = new javax.swing.JButton();
         btnLap = new javax.swing.JButton();
         jMenuBar1 = new javax.swing.JMenuBar();
         jMenu1 = new javax.swing.JMenu();
@@ -127,17 +125,6 @@ public class Main2 extends javax.swing.JFrame {
             }
         });
 
-        btnPembayaran.setFont(new java.awt.Font("Tahoma", 1, 11)); // NOI18N
-        btnPembayaran.setIcon(new javax.swing.ImageIcon(getClass().getResource("/icon/price-tag-icon.png"))); // NOI18N
-        btnPembayaran.setText("Pembayaran");
-        btnPembayaran.setHorizontalTextPosition(javax.swing.SwingConstants.CENTER);
-        btnPembayaran.setVerticalTextPosition(javax.swing.SwingConstants.BOTTOM);
-        btnPembayaran.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                btnPembayaranActionPerformed(evt);
-            }
-        });
-
         btnLap.setFont(new java.awt.Font("Tahoma", 1, 11)); // NOI18N
         btnLap.setIcon(new javax.swing.ImageIcon(getClass().getResource("/icon/lapangan.png"))); // NOI18N
         btnLap.setText("Lapangan");
@@ -161,13 +148,11 @@ public class Main2 extends javax.swing.JFrame {
                 .addGap(29, 29, 29)
                 .addComponent(btnPenyewa)
                 .addGap(18, 18, 18)
-                .addComponent(btnPembayaran)
-                .addGap(35, 35, 35)
                 .addComponent(btnLap)
-                .addContainerGap(496, Short.MAX_VALUE))
+                .addContainerGap(708, Short.MAX_VALUE))
         );
 
-        jPanel3Layout.linkSize(javax.swing.SwingConstants.HORIZONTAL, new java.awt.Component[] {btnBeranda, btnBoking, btnLap, btnPembayaran, btnPenyewa});
+        jPanel3Layout.linkSize(javax.swing.SwingConstants.HORIZONTAL, new java.awt.Component[] {btnBeranda, btnBoking, btnLap, btnPenyewa});
 
         jPanel3Layout.setVerticalGroup(
             jPanel3Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
@@ -177,7 +162,6 @@ public class Main2 extends javax.swing.JFrame {
                     .addComponent(btnBoking, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
                     .addComponent(btnPenyewa, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
                     .addComponent(btnBeranda, javax.swing.GroupLayout.PREFERRED_SIZE, 58, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(btnPembayaran, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
                     .addComponent(btnLap, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
                 .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
         );
@@ -211,7 +195,7 @@ public class Main2 extends javax.swing.JFrame {
 
         jMenu1.setText("File");
 
-        jmLogin.setIcon(new javax.swing.ImageIcon(getClass().getResource("/icon/login25.png"))); // NOI18N
+        jmLogin.setIcon(new javax.swing.ImageIcon(getClass().getResource("/icon/login.png"))); // NOI18N
         jmLogin.setText("Login");
         jmLogin.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -229,7 +213,7 @@ public class Main2 extends javax.swing.JFrame {
         });
         jMenu1.add(jmLogOut);
 
-        jmKeluar.setIcon(new javax.swing.ImageIcon(getClass().getResource("/icon/Cancel_25px.png"))); // NOI18N
+        jmKeluar.setIcon(new javax.swing.ImageIcon(getClass().getResource("/icon/Actions-window-close-icon.png"))); // NOI18N
         jmKeluar.setText("keluar");
         jmKeluar.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -341,10 +325,6 @@ public class Main2 extends javax.swing.JFrame {
         new FormPenyewa().setVisible(true);
     }//GEN-LAST:event_btnPenyewaActionPerformed
 
-    private void btnPembayaranActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnPembayaranActionPerformed
-//        new FormPembayaran().setVisible(true);
-    }//GEN-LAST:event_btnPembayaranActionPerformed
-
     private void btnLapActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnLapActionPerformed
         new FormLapangan().setVisible(true);
     }//GEN-LAST:event_btnLapActionPerformed
@@ -397,7 +377,6 @@ public class Main2 extends javax.swing.JFrame {
     private javax.swing.JButton btnBeranda;
     public static javax.swing.JButton btnBoking;
     public static javax.swing.JButton btnLap;
-    public static javax.swing.JButton btnPembayaran;
     public static javax.swing.JButton btnPenyewa;
     private javax.swing.JMenu jMenu1;
     private javax.swing.JMenu jMenu3;
